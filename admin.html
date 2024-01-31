@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Admin Shop</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Trang Chủ</a></li>
+      <li class="dropdown"><a href="#">Danh Mục </a></li>
+      <li><a href="#">Hàng Hóa</a></li>
+      <li><a href="#">Khách Hàng</a></li>
+      <li><a href="#">Bình Luận</a></li>
+      <li><a href="#">Thống Kê</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+    <div class="row">
+        <div class=" rowfrmtitle">
+            <h2>Thêm Mới Loại hàng</h2>
+        </div>
+        <div class="frmcontent">
+            <form action="#" method="post">
+                <div class="rowmb10">
+                    Mã Loại <br>
+                    <input type="text" name="maloai" disabled>
+                </div>
+                <div class="rowmb10">
+                    Tên Loại <br>
+                    <input type="text" name="tenloai">
+                </div>
+                <div class="rowmb10">
+                    <input type="submit" value="Thêm Mới">
+                    <input type="reset" value="Nhập Lại">
+                    <a href="#"><input type="button" value="Danh Sách"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+<style>
+  /* CSS for admin.html */
+body {
+    background-color: #f0f0f0; /* light gray */
+    color: #000; /* black */
+}
+
+.admin-panel {
+    background-color: #fff; /* white */
+    border: 1px solid #ccc; /* gray */
+    padding: 20px;
+    margin: 20px;
+}
+
+/* CSS for add.php in nammuc folder */
+.nammuc input[type="text"], .nammuc input[type="email"], .nammuc input[type="password"], .nammuc textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* gray */
+    margin-bottom: 10px;
+}
+
+.nammuc input[type="submit"] {
+    background-color: #000; /* black */
+    color: #fff; /* white */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.nammuc input[type="submit"]:hover {
+    background-color: #444; /* dark gray */
+}
+</style>
